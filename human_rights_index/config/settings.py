@@ -36,7 +36,7 @@ SECRET_KEY = env('SECRET_KEY')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'humanrightsindex.eu', ]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'humanrightsindex.eu', '194.135.94.42']
 
 
 # Application definition
