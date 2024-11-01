@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+html, body {
+    height: 100%; /* Make sure the body takes the full height of the viewport */
+    margin: 0;
+    font-family: "Anton", helvetica, sans-serif;
+}
+
+
+body {
+    background: url("/static/hri/images/background.svg");
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    background-size: cover;        /* Stretches the image to cover the entire element */
+    background-position: center;   /* Centers the background image */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the #content horizontally */
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+}
+
+#header {
+    width: 100%;
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Sticks to the top of the page */
+    left: 0; /* Aligns it to the left of the viewport */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    display: flex;
+    align-items: center;  /* Centers items vertically within the header */
+    justify-content: space-between; /* Distributes space between items */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Add margin-top to #content so it doesn't go under the header */
+#content {
+    margin-top: 150px; /* Adjust this value based on your header's height */
+    width: 700px;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Sets the gap between each div */
+}
+
+.button {
+    background: #947DB5;
+    border-radius: 15px;
+    width: 80%;
+    margin: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: "Anton", helvetica, sans-serif;
+}
+
+.button-div{
+
+}
+
+#page-title {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#logo {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    order: 1;
+}
+
+#navigation {
+    order: 3;
+}

@@ -1,0 +1,17 @@
+{% extends "hri/base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <div>
+    {% blocktranslate %}
+    This survey allows you to see your personal social vulnerability score.
+You have three options: You can create a group, join a group or do the survey individually
+    {% endblocktranslate %}
+    </div>
+
+
+    <div class="button-div"><a class="button" href="{% url 'enter_group_code' %}">{% translate "Start survey" %}</a></div>
+    <div class="button-div"><a class="button" href="{% url 'create_group' %}">{% translate "Register a group" %}</a></div>
+    <div class="button-div"><a class="button" href="{% url 'search_group' %}">{% translate "Check group results" %}</a></div>
+
+{% endblock %}

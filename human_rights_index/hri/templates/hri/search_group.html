@@ -1,0 +1,24 @@
+{% extends 'hri/base.html' %}
+{% load i18n %}
+
+{% block content %}
+  <h1>Search for a Group</h1>
+  
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">{% translate "Search" %}</button>
+  </form>
+
+  {% if group %}
+    <h2>{% translate "Group Details" %}:</h2>
+    <p><strong>Name:</strong> {{ group.name }}</p>
+    <p><strong>Code:</strong> {{ group.code }}</p>
+      {% if group.score %}
+        <p><strong>{% translate "Score" %}:</strong> {{ group.score|floatformat:0 }}</p>
+          {% endif %}
+  {% elif form.errors %}
+    <p style="color:red;">{{ form.errors.code }}</p>
+  {% endif %}
+  
+{% endblock %}

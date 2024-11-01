@@ -1,0 +1,15 @@
+{% extends "hri/base.html" %}
+
+{% block content %}
+
+
+    <div id="question-container">
+
+        <form method="POST" action="{% url 'weight' survey.id %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}

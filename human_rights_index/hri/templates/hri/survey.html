@@ -1,0 +1,22 @@
+{% extends "hri/base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h2>{% translate "Survey Progress" %}: {{ question_number }} of {{ total_questions }}</h2>
+
+    <div id="question-container">
+        <p>{{ question.question }}</p>
+
+        <form method="POST" action="{% url 'survey' survey.id question_number %}">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- This will now display dynamically generated answer labels -->
+            <button type="submit">{% translate "Submit" %}</button>
+        </form>
+    </div>
+
+    <div class="navigation">
+        {% if question_number > 1 %}
+        <a href="{% url 'survey' survey.id question_number|add:'-1' %}">{% translate "Previous" %}</a>
+        {% endif %}
+    </div>
+{% endblock %}

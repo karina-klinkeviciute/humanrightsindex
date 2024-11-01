@@ -1,0 +1,18 @@
+{% extends "hri/base.html" %}
+{% load i18n %}
+
+{% block title %} {% translate "Start Survey" %} {% endblock %}
+
+{% block content %}
+
+<form method="POST" action="">
+    <div>{% translate "If you have a group code, please enter it here" %}:</div>
+    <div>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="button">{% translate "Start Survey" %}</button>
+    </div>
+
+</form>
+
+{% endblock %}

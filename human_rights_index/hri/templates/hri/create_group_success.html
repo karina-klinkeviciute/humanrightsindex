@@ -1,0 +1,10 @@
+{% extends 'hri/base.html' %}
+{% load i18n %}
+
+{% block content %}
+  <h1>{% translate "Group Created Successfully" %}!</h1>
+
+  <p><strong>{% translate "Group Name" %}:</strong> {{ group.name }}</p>
+  <p><strong>{% translate "Group Code" %}:</strong> {{ group.code }}</p>
+
+{% endblock %}
