@@ -94,7 +94,7 @@ DATABASES = {
         'USER': env('DB_USER'),
         'PASSWORD': env('DB_PASSWORD'),
         'HOST': env('DB_HOST'),
-        'PORT': '5432',
+        'PORT': env('DB_PORT'),
         # 'OPTIONS': {
         #     'read_default_file': '/path/to/my.cnf',
         # },
