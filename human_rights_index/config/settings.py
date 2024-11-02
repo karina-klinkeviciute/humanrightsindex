@@ -36,12 +36,13 @@ SECRET_KEY = env('SECRET_KEY')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'humanrightsindex.eu', '194.135.94.42']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'humanrightsindex.eu']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,7 +124,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGES = (
+    ('lt', "Lietuviškai"),
+    ('en', "English"),
+    ('pt', "Português"),
+    ('sk', "Slovenský")
+)
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 TIME_ZONE = 'UTC'
 

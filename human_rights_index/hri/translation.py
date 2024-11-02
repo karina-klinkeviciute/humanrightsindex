@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, translator
 
-from models import Weight, Question
+from hri.models import Weight, Question
 
 
 class WeightTranslationOptions(TranslationOptions):
