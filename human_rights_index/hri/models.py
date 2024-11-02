@@ -71,3 +71,12 @@ class Answer(models.Model):
     survey = models.ForeignKey(Survey, on_delete=models.CASCADE)
     option = models.CharField(max_length=255, null=True, blank=True, choices=AnswerChoice.choices)
     other = models.TextField(null=True, blank=True)
+
+
+class Text(models.Model):
+    body = models.TextField(verbose_name=_("body"))
+    title = models.CharField(verbose_name=_("title"), max_length=255)
+    notes = models.TextField(verbose_name=_("notes"))
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    slug = models.SlugField(verbose_name=_("slug"))

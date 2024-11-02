@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import Group, Question, Survey, Answer, Weight
+from hri.models import Group, Question, Survey, Answer, Weight, Text
 
 
 @admin.register(Group)
@@ -34,3 +34,8 @@ class AnswerAdmin(admin.ModelAdmin):
 @admin.register(Weight)
 class WeightAdmin(admin.ModelAdmin):
     list_display = ('weight_question', )
+
+
+@admin.register(Text)
+class TextAdmin(admin.ModelAdmin):
+    list_display = ('title', 'created_at')
