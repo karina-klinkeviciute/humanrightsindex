@@ -76,7 +76,7 @@ class Answer(models.Model):
 class Text(models.Model):
     body = models.TextField(verbose_name=_("body"))
     title = models.CharField(verbose_name=_("title"), max_length=255)
-    notes = models.TextField(verbose_name=_("notes"))
+    notes = models.TextField(verbose_name=_("notes"), blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     slug = models.SlugField(verbose_name=_("slug"))
