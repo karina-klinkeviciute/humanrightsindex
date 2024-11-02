@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-02 19:07+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+#: hri/forms.py:10 hri/forms.py:72
+msgid "Enter Group Code"
+msgstr "Įveskite grupės kodą"
+
+#: hri/forms.py:14
+msgid "Select your answer"
+msgstr "Pasirinkite atsakymą"
+
+#: hri/forms.py:37
+msgid ""
+"In your own life, which of those factors has the biggest impact on your "
+"vulnerability?"
+msgstr "Jūsų gyvenime, kuris iš šių veiksnių daro didžiausią įtaką jūsų pažeidžiamumui?"
+
+#: hri/forms.py:58
+msgid "Group code has to be at least 7 characters long."
+msgstr "Grupės kodo ilgis turi būti bent 7 simboliai"
+
+#: hri/forms.py:62
+msgid "Code can only have letters and numbers"
+msgstr "Kodas gali susidėti tik iš skaičių ir raidžių"
+
+#: hri/forms.py:66
+msgid "A group with this code already exists. Please enter a different code"
+msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
+
+#: hri/forms.py:79
+msgid "Please enter a valid group code."
+msgstr "Prašau įvesti tinkamą grupės kodą"
+
+#: hri/models.py:67
+msgid "Zero point answer"
+msgstr "Nulio taškų atsakymas"
+
+#: hri/models.py:68
+msgid "Vieno taško atsakymas"
+msgstr ""
+
+#: hri/models.py:69
+msgid "Two points answer"
+msgstr ""
+
+#: hri/templates/hri/about.html:6
+msgid ""
+"\n"
+"    This survey allows you to see your personal social vulnerability score.\n"
+"\n"
+"\n"
+"    "
+msgstr ""
+
+#: hri/templates/hri/base.html:14
+msgid "Human rights index"
+msgstr ""
+
+#: hri/templates/hri/base.html:15
+msgid "About"
+msgstr "Apie"
+
+#: hri/templates/hri/create_group.html:23
+msgid "Save Group"
+msgstr ""
+
+#: hri/templates/hri/create_group_success.html:5
+msgid "Group Created Successfully"
+msgstr ""
+
+#: hri/templates/hri/create_group_success.html:7
+msgid "Group Name"
+msgstr ""
+
+#: hri/templates/hri/create_group_success.html:8
+msgid "Group Code"
+msgstr ""
+
+#: hri/templates/hri/enter_group_code.html:4
+#: hri/templates/hri/enter_group_code.html:13
+msgid "Start Survey"
+msgstr ""
+
+#: hri/templates/hri/enter_group_code.html:9
+msgid "If you have a group code, please enter it here"
+msgstr ""
+
+#: hri/templates/hri/index.html:6
+msgid ""
+"\n"
+"    This survey allows you to see your personal social vulnerability score.\n"
+"You have three options: You can create a group, join a group or do the "
+"survey individually\n"
+"    "
+msgstr ""
+
+#: hri/templates/hri/index.html:13
+msgid "Start survey"
+msgstr ""
+
+#: hri/templates/hri/index.html:14
+msgid "Register a group"
+msgstr ""
+
+#: hri/templates/hri/index.html:15
+msgid "Check group results"
+msgstr ""
+
+#: hri/templates/hri/search_group.html:10
+msgid "Search"
+msgstr ""
+
+#: hri/templates/hri/search_group.html:14
+msgid "Group Details"
+msgstr ""
+
+#: hri/templates/hri/search_group.html:18
+msgid "Score"
+msgstr ""
+
+#: hri/templates/hri/survey.html:5
+msgid "Survey Progress"
+msgstr ""
+
+#: hri/templates/hri/survey.html:13
+msgid "Submit"
+msgstr ""
+
+#: hri/templates/hri/survey.html:19
+msgid "Previous"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:6
+msgid "Your personal human rights index"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:6
+#: hri/templates/hri/survey_complete.html:39
+msgid "out of 100 points"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:10
+msgid "Vulnerability"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:14
+#: hri/templates/hri/survey_complete.html:46
+#: hri/templates/hri/survey_complete.html:70
+msgid "very vulnerable"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:18
+#: hri/templates/hri/survey_complete.html:50
+#: hri/templates/hri/survey_complete.html:71
+msgid "more vulnerable"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:22
+#: hri/templates/hri/survey_complete.html:54
+#: hri/templates/hri/survey_complete.html:72
+msgid "medium vulnerability"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:26
+#: hri/templates/hri/survey_complete.html:58
+#: hri/templates/hri/survey_complete.html:73
+msgid "a little vulnerable"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:30
+#: hri/templates/hri/survey_complete.html:62
+#: hri/templates/hri/survey_complete.html:74
+msgid "very invulnerable"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:39
+msgid "Human right index for your group"
+msgstr ""
+
+#: hri/templates/hri/survey_complete.html:43
+msgid "Group vulnerability"
+msgstr ""
