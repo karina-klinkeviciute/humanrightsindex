@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %} {% endblock %}</title>
+    <title>{% block title %} {% endblock %} - {% translate "Human rights index" %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'hri/css/style.css' %}">
 </head>
 
@@ -12,13 +12,13 @@
     <div id="header">
         <span id="logo"><a href="/"><img src="{% static 'hri/images/logo.svg' %}"></a></span>
         <span id="page-title">{% translate "Human rights index" %}</span>
-        <span id="navigation"><a href="{% url "about" %}">{% translate "About" %}</a>
+        <span id="navigation"><a class="nav-item" href="{% url "text" "about" %}">{% translate "About the project" %}</a>
 
             {% load i18n %}
 
 <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
     <input name="next" type="hidden" value="{{ redirect_to }}">
-    <select name="language" onchange="this.form.submit()">
+    <select class="nav-item" name="language" onchange="this.form.submit()">
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}
         {% get_language_info_list for LANGUAGES as languages %}
@@ -38,6 +38,24 @@
     {% block content %} {% endblock %}
 
     </div>
-
+<footer>
+    <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>
+    <div class="footer-logos">
+    <img src="{% static 'hri/images/TJA_baltas.svg' %}">
+    <img src="{% static 'hri/images/saplinq_logo_baltas.svg' %}">
+    <img src="{% static 'hri/images/ILGA_logo_baltas.svg' %}">
+    <img src="{% static 'hri/images/EU_logo_baltas.svg' %}">
+    <img src="{% static 'hri/images/JRA_logo_B.svg' %}">
+    <img src="{% static 'hri/images/Rosa_logo_baltas.svg' %}">
+    </div>
+    <p>
+    Šis instrumentas yra dviejų projektų, „Rainbow Challenge – Twin Communities on Human Rights“, dalis.
+    Projektas iš dalies finansuojamas Europos Sąjungos lėšomis.
+    Tačiau išreikštos nuomonės ir požiūriai yra tik autorių ir nebūtinai atspindi Europos Sąjungos ar
+    Jaunimo reikalų agentūros požiūrį. Nei Europos Sąjunga, nei dotaciją teikianti institucija negali būti
+    laikoma atsakinga už juos. Šio instrumento kūrimą iš dalies parėmė Rosa Luxemburg fondas pagal projektas
+    „Rainbow Challenge – Communities on Human Rights“
+    </p>
+</footer>
 </body>
 </html>

@@ -5,7 +5,7 @@ from django.urls import reverse_lazy
 from django.views.generic import FormView, View, TemplateView, CreateView
 
 from .forms import GroupCodeForm, SurveyAnswerForm, WeightForm, GroupForm, GroupSearchForm
-from .models import Group, Survey, Question, Answer, Weight
+from .models import Group, Survey, Question, Answer, Weight, Text
 
 
 class IndexView(TemplateView):
@@ -151,5 +151,9 @@ class GroupSearchView(CreateView):
         return render(request, self.template_name, {'form': form})
 
 
-class AboutView(TemplateView):
-    template_name = 'hri/about.html'
+class TextView(TemplateView):
+    template_name = 'hri/text.html'
+
+    def get_context_data(self, slug, **kwargs):
+        text = Text.objects.get(slug=slug)
+        return {'text': text}
