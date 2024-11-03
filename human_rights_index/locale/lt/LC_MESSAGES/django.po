@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 19:17+0000\n"
+"POT-Creation-Date: 2024-11-03 19:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,6 +225,10 @@ msgstr "Rezultatas"
 #: hri/templates/hri/survey.html:5
 msgid "Survey Progress"
 msgstr "Apklausos progresas"
+
+#: hri/templates/hri/survey.html:5
+msgid "of"
+msgstr "iš"
 
 #: hri/templates/hri/survey.html:13
 msgid "Submit"
