@@ -154,7 +154,7 @@ msgstr "Privatumo politika"
 
 #: hri/templates/hri/create_group.html:5
 msgid "Create a New Group"
-msgstr ""
+msgstr "Sukirti naują grupę"
 
 #: hri/templates/hri/create_group.html:6
 msgid ""
