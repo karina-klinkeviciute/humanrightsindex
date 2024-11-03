@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 18:01+0000\n"
+"POT-Creation-Date: 2024-11-03 19:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:72
+#: hri/forms.py:10 hri/forms.py:68
 msgid "Enter Group Code"
 msgstr "Įveskite grupės kodą"
 
@@ -37,18 +37,14 @@ msgstr ""
 "pažeidžiamumui?"
 
 #: hri/forms.py:58
-msgid "Group code has to be at least 7 characters long."
-msgstr "Grupės kodo ilgis turi būti bent 7 simboliai"
-
-#: hri/forms.py:62
 msgid "Code can only have letters and numbers"
 msgstr "Kodas gali susidėti tik iš skaičių ir raidžių"
 
-#: hri/forms.py:66
+#: hri/forms.py:62
 msgid "A group with this code already exists. Please enter a different code"
 msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
 
-#: hri/forms.py:79
+#: hri/forms.py:75
 msgid "Please enter a valid group code."
 msgstr "Prašau įvesti tinkamą grupės kodą"
 
@@ -156,7 +152,19 @@ msgstr "Apie projektą"
 msgid "Privacy policy"
 msgstr "Privatumo politika"
 
-#: hri/templates/hri/create_group.html:23
+#: hri/templates/hri/create_group.html:5
+msgid "Create a New Group"
+msgstr ""
+
+#: hri/templates/hri/create_group.html:6
+msgid ""
+"Enter a group code. Group code may only consist of letters and numbers. "
+"Uppercase and lowercase letters count as the same."
+msgstr ""
+"Įveskite grupės kodą. Grupės kodas gali susidėti tik iš raidžių ir skaičių. "
+"Didžiosios ir mažosios raidės laikomos vienodomis."
+
+#: hri/templates/hri/create_group.html:24
 msgid "Save Group"
 msgstr "Išsaugoti grupę"
 
@@ -165,10 +173,6 @@ msgid "Group Created Successfully"
 msgstr "Grupė sukurta sėkmingai"
 
 #: hri/templates/hri/create_group_success.html:7
-msgid "Group Name"
-msgstr "Grupės pavadinimas"
-
-#: hri/templates/hri/create_group_success.html:8
 msgid "Group Code"
 msgstr "Grupės kodas"
 
@@ -191,8 +195,8 @@ msgid ""
 msgstr ""
 "\n"
 "    Ši apklausa padeda apskaičiuoti jūsų asmeninį pažeidžiamumo indeksą.\n"
-"Galit atlikti vieną iš trijų veiksmų: sukurti naują grupę, pildyti apklausą pagal grupę, "
-"įvesdami jos kodą arba pildyti individualią apklausą"
+"Galit atlikti vieną iš trijų veiksmų: sukurti naują grupę, pildyti apklausą "
+"pagal grupę, įvesdami jos kodą arba pildyti individualią apklausą"
 
 #: hri/templates/hri/index.html:13
 msgid "Start survey"
@@ -280,6 +284,3 @@ msgstr "Žmogaus teisių indeksas jūsų grupei"
 #: hri/templates/hri/survey_complete.html:43
 msgid "Group vulnerability"
 msgstr "Grupės pažeidžiamumas"
-
-#~ msgid "About"
-#~ msgstr "Apie"

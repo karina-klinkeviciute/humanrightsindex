@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 18:01+0000\n"
+"POT-Creation-Date: 2024-11-03 19:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
 ">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:72
+#: hri/forms.py:10 hri/forms.py:68
 msgid "Enter Group Code"
 msgstr ""
 
@@ -34,18 +34,14 @@ msgid ""
 msgstr ""
 
 #: hri/forms.py:58
-msgid "Group code has to be at least 7 characters long."
-msgstr ""
-
-#: hri/forms.py:62
 msgid "Code can only have letters and numbers"
 msgstr ""
 
-#: hri/forms.py:66
+#: hri/forms.py:62
 msgid "A group with this code already exists. Please enter a different code"
 msgstr ""
 
-#: hri/forms.py:79
+#: hri/forms.py:75
 msgid "Please enter a valid group code."
 msgstr ""
 
@@ -149,7 +145,17 @@ msgstr ""
 msgid "Privacy policy"
 msgstr ""
 
-#: hri/templates/hri/create_group.html:23
+#: hri/templates/hri/create_group.html:5
+msgid "Create a New Group"
+msgstr ""
+
+#: hri/templates/hri/create_group.html:6
+msgid ""
+"Enter a group code. Group code may only consist of letters and numbers. "
+"Uppercase and lowercase letters count as the same."
+msgstr ""
+
+#: hri/templates/hri/create_group.html:24
 msgid "Save Group"
 msgstr ""
 
@@ -158,10 +164,6 @@ msgid "Group Created Successfully"
 msgstr ""
 
 #: hri/templates/hri/create_group_success.html:7
-msgid "Group Name"
-msgstr ""
-
-#: hri/templates/hri/create_group_success.html:8
 msgid "Group Code"
 msgstr ""
 
