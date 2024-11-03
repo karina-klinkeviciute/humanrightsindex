@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-02 19:07+0200\n"
+"POT-Creation-Date: 2024-11-03 18:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: hri/forms.py:10 hri/forms.py:72
 msgid "Enter Group Code"
 msgstr ""
@@ -47,33 +48,104 @@ msgstr ""
 msgid "Please enter a valid group code."
 msgstr ""
 
-#: hri/models.py:67
+#: hri/models.py:8
+msgid "name"
+msgstr ""
+
+#: hri/models.py:9
+msgid "code"
+msgstr ""
+
+#: hri/models.py:10 hri/models.py:37
+msgid "score"
+msgstr ""
+
+#: hri/models.py:18
+msgid "weight_answer"
+msgstr ""
+
+#: hri/models.py:25 hri/models.py:69
+msgid "question"
+msgstr ""
+
+#: hri/models.py:26
+msgid "answer for 0 points"
+msgstr ""
+
+#: hri/models.py:27
+msgid "answer for one point"
+msgstr ""
+
+#: hri/models.py:28
+msgid "answer for 2 points"
+msgstr ""
+
+#: hri/models.py:29
+msgid "weight choice"
+msgstr ""
+
+#: hri/models.py:36
+msgid "group"
+msgstr ""
+
+#: hri/models.py:38
+msgid "weight"
+msgstr ""
+
+#: hri/models.py:66
 msgid "Zero point answer"
 msgstr ""
 
-#: hri/models.py:68
+#: hri/models.py:67
 msgid "One point answer"
 msgstr ""
 
-#: hri/models.py:69
+#: hri/models.py:68
 msgid "Two points answer"
 msgstr ""
 
-#: hri/templates/hri/about.html:6
-msgid ""
-"\n"
-"    This survey allows you to see your personal social vulnerability score.\n"
-"\n"
-"\n"
-"    "
+#: hri/models.py:70
+msgid "survey"
 msgstr ""
 
-#: hri/templates/hri/base.html:14
+#: hri/models.py:71
+msgid "option"
+msgstr ""
+
+#: hri/models.py:75
+msgid "body"
+msgstr ""
+
+#: hri/models.py:76
+msgid "title"
+msgstr ""
+
+#: hri/models.py:77
+msgid "notes"
+msgstr ""
+
+#: hri/models.py:78
+msgid "created at"
+msgstr ""
+
+#: hri/models.py:79
+msgid "updated at"
+msgstr ""
+
+#: hri/models.py:80
+msgid "slug"
+msgstr ""
+
+#: hri/templates/hri/base.html:7 hri/templates/hri/base.html:14
 msgid "Human rights index"
 msgstr ""
 
 #: hri/templates/hri/base.html:15
-msgid "About"
+msgid "About the project"
+msgstr ""
+
+#: hri/templates/hri/base.html:42
+msgid "Privacy policy"
 msgstr ""
 
 #: hri/templates/hri/create_group.html:23

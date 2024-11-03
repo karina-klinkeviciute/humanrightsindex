@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-02 19:07+0200\n"
+"POT-Creation-Date: 2024-11-03 18:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
+
 #: hri/forms.py:10 hri/forms.py:72
 msgid "Enter Group Code"
 msgstr "Įveskite grupės kodą"
@@ -31,7 +32,9 @@ msgstr "Pasirinkite atsakymą"
 msgid ""
 "In your own life, which of those factors has the biggest impact on your "
 "vulnerability?"
-msgstr "Jūsų gyvenime, kuris iš šių veiksnių daro didžiausią įtaką jūsų pažeidžiamumui?"
+msgstr ""
+"Jūsų gyvenime, kuris iš šių veiksnių daro didžiausią įtaką jūsų "
+"pažeidžiamumui?"
 
 #: hri/forms.py:58
 msgid "Group code has to be at least 7 characters long."
@@ -49,59 +52,134 @@ msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
 msgid "Please enter a valid group code."
 msgstr "Prašau įvesti tinkamą grupės kodą"
 
-#: hri/models.py:67
+#: hri/models.py:8
+msgid "name"
+msgstr "pavadinimas"
+
+#: hri/models.py:9
+msgid "code"
+msgstr "kodas"
+
+#: hri/models.py:10 hri/models.py:37
+msgid "score"
+msgstr "rezultatas"
+
+#: hri/models.py:18
+#, fuzzy
+#| msgid "Zero point answer"
+msgid "weight_answer"
+msgstr "Svertinis atsakymas"
+
+#: hri/models.py:25 hri/models.py:69
+msgid "question"
+msgstr "klausimas"
+
+#: hri/models.py:26
+msgid "answer for 0 points"
+msgstr "0 taškų atsakymas"
+
+#: hri/models.py:27
+msgid "answer for one point"
+msgstr "1 taško atsakymas"
+
+#: hri/models.py:28
+msgid "answer for 2 points"
+msgstr "2 taškų atsakymas"
+
+#: hri/models.py:29
+msgid "weight choice"
+msgstr "sverto pasirinkimas"
+
+#: hri/models.py:36
+msgid "group"
+msgstr "grupė"
+
+#: hri/models.py:38
+msgid "weight"
+msgstr "svertas"
+
+#: hri/models.py:66
 msgid "Zero point answer"
 msgstr "Nulio taškų atsakymas"
 
+#: hri/models.py:67
+#, fuzzy
+#| msgid "Zero point answer"
+msgid "One point answer"
+msgstr "Vieno taško atsakymas"
+
 #: hri/models.py:68
-msgid "Vieno taško atsakymas"
-msgstr ""
-
-#: hri/models.py:69
 msgid "Two points answer"
-msgstr ""
+msgstr "Dviejų taškų atsakymas"
 
-#: hri/templates/hri/about.html:6
-msgid ""
-"\n"
-"    This survey allows you to see your personal social vulnerability score.\n"
-"\n"
-"\n"
-"    "
-msgstr ""
+#: hri/models.py:70
+msgid "survey"
+msgstr "apklausa"
 
-#: hri/templates/hri/base.html:14
+#: hri/models.py:71
+msgid "option"
+msgstr "pasirinkimas"
+
+#: hri/models.py:75
+msgid "body"
+msgstr "tekstas"
+
+#: hri/models.py:76
+msgid "title"
+msgstr "pavadinimas"
+
+#: hri/models.py:77
+msgid "notes"
+msgstr "pastabos"
+
+#: hri/models.py:78
+msgid "created at"
+msgstr "sukurta"
+
+#: hri/models.py:79
+msgid "updated at"
+msgstr "atnaujinta"
+
+#: hri/models.py:80
+msgid "slug"
+msgstr "slugas"
+
+#: hri/templates/hri/base.html:7 hri/templates/hri/base.html:14
 msgid "Human rights index"
-msgstr ""
+msgstr "Žmogaus teisių indeksas"
 
 #: hri/templates/hri/base.html:15
-msgid "About"
-msgstr "Apie"
+msgid "About the project"
+msgstr "Apie projektą"
+
+#: hri/templates/hri/base.html:42
+msgid "Privacy policy"
+msgstr "Privatumo politika"
 
 #: hri/templates/hri/create_group.html:23
 msgid "Save Group"
-msgstr ""
+msgstr "Išsaugoti grupę"
 
 #: hri/templates/hri/create_group_success.html:5
 msgid "Group Created Successfully"
-msgstr ""
+msgstr "Grupė sukurta sėkmingai"
 
 #: hri/templates/hri/create_group_success.html:7
 msgid "Group Name"
-msgstr ""
+msgstr "Grupės pavadinimas"
 
 #: hri/templates/hri/create_group_success.html:8
 msgid "Group Code"
-msgstr ""
+msgstr "Grupės kodas"
 
 #: hri/templates/hri/enter_group_code.html:4
 #: hri/templates/hri/enter_group_code.html:13
 msgid "Start Survey"
-msgstr ""
+msgstr "Pradėti apklausą"
 
 #: hri/templates/hri/enter_group_code.html:9
 msgid "If you have a group code, please enter it here"
-msgstr ""
+msgstr "Jei turit grupės kodą, įveskite čia"
 
 #: hri/templates/hri/index.html:6
 msgid ""
@@ -111,90 +189,96 @@ msgid ""
 "survey individually\n"
 "    "
 msgstr ""
+"    Ši apklausa padeda apskaičiuoti jūsų asmeninį pažeidžiamumo indeksą.\n"
+"Galit atlikti vieną iš trijų veiksmų: sukurti naują grupę, pildyti apklausą pagal grupę, "
+"įvesdami jos kodą arba pildyti individualią apklausą"
 
 #: hri/templates/hri/index.html:13
 msgid "Start survey"
-msgstr ""
+msgstr "Pradėti apklausą"
 
 #: hri/templates/hri/index.html:14
 msgid "Register a group"
-msgstr ""
+msgstr "Užregistruoti grupę"
 
 #: hri/templates/hri/index.html:15
 msgid "Check group results"
-msgstr ""
+msgstr "Tikrinti grupės rezultatus"
 
 #: hri/templates/hri/search_group.html:10
 msgid "Search"
-msgstr ""
+msgstr "Paieška"
 
 #: hri/templates/hri/search_group.html:14
 msgid "Group Details"
-msgstr ""
+msgstr "Grupės rezultatai"
 
 #: hri/templates/hri/search_group.html:18
 msgid "Score"
-msgstr ""
+msgstr "Rezultatas"
 
 #: hri/templates/hri/survey.html:5
 msgid "Survey Progress"
-msgstr ""
+msgstr "Apklausos progresas"
 
 #: hri/templates/hri/survey.html:13
 msgid "Submit"
-msgstr ""
+msgstr "Pateikti"
 
 #: hri/templates/hri/survey.html:19
 msgid "Previous"
-msgstr ""
+msgstr "Ankstesnis"
 
 #: hri/templates/hri/survey_complete.html:6
 msgid "Your personal human rights index"
-msgstr ""
+msgstr "Jūsų asmeninis žmogaus teisių indeksas"
 
 #: hri/templates/hri/survey_complete.html:6
 #: hri/templates/hri/survey_complete.html:39
 msgid "out of 100 points"
-msgstr ""
+msgstr "iš 100 taškų"
 
 #: hri/templates/hri/survey_complete.html:10
 msgid "Vulnerability"
-msgstr ""
+msgstr "Pažeidžiamumas"
 
 #: hri/templates/hri/survey_complete.html:14
 #: hri/templates/hri/survey_complete.html:46
 #: hri/templates/hri/survey_complete.html:70
 msgid "very vulnerable"
-msgstr ""
+msgstr "labai pažeidžiama/s"
 
 #: hri/templates/hri/survey_complete.html:18
 #: hri/templates/hri/survey_complete.html:50
 #: hri/templates/hri/survey_complete.html:71
 msgid "more vulnerable"
-msgstr ""
+msgstr "labiau pažeidžiama/s"
 
 #: hri/templates/hri/survey_complete.html:22
 #: hri/templates/hri/survey_complete.html:54
 #: hri/templates/hri/survey_complete.html:72
 msgid "medium vulnerability"
-msgstr ""
+msgstr "vidutiniškai pažeidžiama/s"
 
 #: hri/templates/hri/survey_complete.html:26
 #: hri/templates/hri/survey_complete.html:58
 #: hri/templates/hri/survey_complete.html:73
 msgid "a little vulnerable"
-msgstr ""
+msgstr "šiek tiek pažeidžiama/s"
 
 #: hri/templates/hri/survey_complete.html:30
 #: hri/templates/hri/survey_complete.html:62
 #: hri/templates/hri/survey_complete.html:74
 msgid "very invulnerable"
-msgstr ""
+msgstr "labai nepažeidžiama/s"
 
 #: hri/templates/hri/survey_complete.html:39
 msgid "Human right index for your group"
-msgstr ""
+msgstr "Žmogaus teisių indeksas jūsų grupei"
 
 #: hri/templates/hri/survey_complete.html:43
 msgid "Group vulnerability"
-msgstr ""
+msgstr "Grupės pažeidžiamumas"
+
+#~ msgid "About"
+#~ msgstr "Apie"

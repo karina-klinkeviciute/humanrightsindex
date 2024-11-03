@@ -48,7 +48,7 @@ class WeightForm(forms.Form):
 class GroupForm(forms.ModelForm):
     class Meta:
         model = Group
-        fields = ['name', 'code']
+        fields = ['code']
 
     def clean_code(self):
         code = self.cleaned_data.get('code')
