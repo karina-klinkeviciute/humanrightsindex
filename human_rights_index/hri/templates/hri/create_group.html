@@ -3,6 +3,7 @@
 
 {% block content %}
   <h1>Create a New Group</h1>
+    <div>Enter a group code. Group code may only consist of letters and numbers. Uppercase and lowercase letters count as the same.</div>
   <form method="post">
       {% csrf_token %}
       {{ form.as_p }}

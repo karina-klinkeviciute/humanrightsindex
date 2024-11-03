@@ -51,11 +51,7 @@ class GroupForm(forms.ModelForm):
         fields = ['code']
 
     def clean_code(self):
-        code = self.cleaned_data.get('code')
-
-        # Ensure the code is at least 7 characters long
-        if len(code) < 7:
-            raise forms.ValidationError(_("Group code has to be at least 7 characters long."))
+        code = self.cleaned_data.get('code').lower()
 
         # Ensure the code contains only letters and numbers
         if not re.match(r'^[A-Za-z0-9]+$', code):
@@ -73,7 +69,7 @@ class GroupSearchForm(forms.Form):
 
     # You can add further validation if needed (e.g., regex for alphanumeric characters)
     def clean_code(self):
-        code = self.cleaned_data.get('code')
+        code = self.cleaned_data.get('code').lower()
 
         if not code:
             raise forms.ValidationError(_("Please enter a valid group code."))

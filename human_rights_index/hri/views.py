@@ -18,7 +18,7 @@ class EnterGroupCodeView(FormView):
     form_class = GroupCodeForm
 
     def form_valid(self, form):
-        code = form.cleaned_data.get('code')
+        code = form.cleaned_data.get('code').lower()
 
         if code:
             # If a code is provided, find the group and create a new survey linked to it
