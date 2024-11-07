@@ -46,7 +46,7 @@ msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
 
 #: hri/forms.py:75
 msgid "Please enter a valid group code."
-msgstr "Prašau įvesti tinkamą grupės kodą"
+msgstr "Prašome įvesti tinkamą grupės kodą"
 
 #: hri/models.py:8
 msgid "name"
@@ -154,15 +154,15 @@ msgstr "Privatumo politika"
 
 #: hri/templates/hri/create_group.html:5
 msgid "Create a New Group"
-msgstr "Sukirti naują grupę"
+msgstr "Sukurti naują grupę"
 
 #: hri/templates/hri/create_group.html:6
 msgid ""
 "Enter a group code. Group code may only consist of letters and numbers. "
 "Uppercase and lowercase letters count as the same."
 msgstr ""
-"Įveskite grupės kodą. Grupės kodas gali susidėti tik iš raidžių ir skaičių. "
-"Didžiosios ir mažosios raidės laikomos vienodomis."
+"Įveskite kuriamos grupės kodą. Jis gali susidėti tik iš raidžių ir skaičių. "
+"Didžiosios ir mažosios raidės reikšmės neturi."
 
 #: hri/templates/hri/create_group.html:24
 msgid "Save Group"
@@ -170,7 +170,7 @@ msgstr "Išsaugoti grupę"
 
 #: hri/templates/hri/create_group_success.html:5
 msgid "Group Created Successfully"
-msgstr "Grupė sukurta sėkmingai"
+msgstr "Sveikiname! Jūsų grupė sėkmingai sukurta."
 
 #: hri/templates/hri/create_group_success.html:7
 msgid "Group Code"
@@ -183,7 +183,7 @@ msgstr "Pradėti apklausą"
 
 #: hri/templates/hri/enter_group_code.html:9
 msgid "If you have a group code, please enter it here"
-msgstr "Jei turit grupės kodą, įveskite čia"
+msgstr "Jei turite ir grupės kodą, prieš pradėdami apklausą įveskite jį čia"
 
 #: hri/templates/hri/index.html:6
 msgid ""
@@ -194,8 +194,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Ši apklausa padeda apskaičiuoti jūsų asmeninį pažeidžiamumo indeksą.\n"
-"Galit atlikti vieną iš trijų veiksmų: sukurti naują grupę, pildyti apklausą "
+"    Ši apklausa padės jums apskaičiuoti jūsų galimą asmeninį pažeidžiamumo indeksą.\n"
+"Galite atlikti vieną iš trijų veiksmų: sukurti naują grupę, užpildyti apklausą "
 "pagal grupę, įvesdami jos kodą arba pildyti individualią apklausą"
 
 #: hri/templates/hri/index.html:13
@@ -288,3 +288,4 @@ msgstr "Žmogaus teisių indeksas jūsų grupei"
 #: hri/templates/hri/survey_complete.html:43
 msgid "Group vulnerability"
 msgstr "Grupės pažeidžiamumas"
+
