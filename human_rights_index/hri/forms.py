@@ -11,13 +11,12 @@ class GroupCodeForm(forms.Form):
 
 
 class SurveyAnswerForm(forms.Form):
-    answer = forms.ChoiceField(widget=forms.RadioSelect, label=_("Select your answer"))
+    answer = forms.ChoiceField(widget=forms.RadioSelect, label=_(""))
 
     def __init__(self, *args, **kwargs):
         # Get the question instance passed in through the view
         question = kwargs.pop('question', None)
         super(SurveyAnswerForm, self).__init__(*args, **kwargs)
-
         # Dynamically set the choices based on the question's answers
         if question:
             choices = []

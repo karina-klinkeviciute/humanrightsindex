@@ -39,18 +39,22 @@ body {
 #content {
     margin-top: 150px; /* Adjust this value based on your header's height */
     width: 700px;
+    height: 700px;
+    min-height: 50vh;
     max-width: 1200px;
     padding: 20px;
-    padding-bottom: 300px;
+    padding-bottom: 500px;
+    margin-bottom: 500px;
     text-align: center;
     background: white;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 40px; /* Sets the gap between each div */
+    font-family: Serif;
 }
 
-.button {
+button, .button {
     background: #947DB5;
     border-radius: 15px;
     width: 80%;
@@ -161,4 +165,43 @@ footer, footer a, footer a:hover, footer a:active, footer a:visited {
     object-fit: contain;          /* Maintain aspect ratio without stretching */
     margin: 0 10px;               /* Optional spacing between images */
     overflow: hidden;
+}
+
+input {
+    height: 2em;
+    border-color: #947DB5;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /*width: 0;*/
+}
+
+form div div label {
+    height: 4em;
+    border-color: #947DB5;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 5px 30px 5px 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+form div div label:hover {
+    box-shadow: 0 2px 4px grey;
+}
+
+form div div label.active {
+    border-width: 3px;
+}
+
+.question {
+    font-size: 1.5em;
 }

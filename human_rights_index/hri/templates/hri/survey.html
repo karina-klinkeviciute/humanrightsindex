@@ -5,7 +5,7 @@
     <h2>{% translate "Survey Progress" %}: {{ question_number }} {% translate "of" %} {{ total_questions }}</h2>
 
     <div id="question-container">
-        <p>{{ question.question }}</p>
+        <p class="question">{{ question.question }}</p>
 
         <form method="POST" action="{% url 'survey' survey.id question_number %}">
             {% csrf_token %}
