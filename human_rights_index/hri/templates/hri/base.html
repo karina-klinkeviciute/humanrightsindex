@@ -33,10 +33,13 @@
         </span>
     </div>
 
-    <div id="content">
+    <div id="content-wrapper">
 
-    {% block content %} {% endblock %}
+        <div id="content">
 
+            {% block content %} {% endblock %}
+
+        </div>
     </div>
 <footer>
     <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>

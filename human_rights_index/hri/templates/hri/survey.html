@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-    <h2>{% translate "Survey Progress" %}: {{ question_number }} {% translate "of" %} {{ total_questions }}</h2>
+    <h3>{% translate "Survey Progress" %}: {{ question_number }} {% translate "of" %} {{ total_questions }}</h3>
 
     <div id="question-container">
         <p class="question">{{ question.question }}</p>

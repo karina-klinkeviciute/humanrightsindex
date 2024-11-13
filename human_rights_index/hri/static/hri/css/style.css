@@ -18,6 +18,8 @@ body {
     flex-direction: column;
     align-items: center; /* Centers the #content horizontally */
     min-height: 100vh; /* Ensures the body takes the full viewport height */
+    height: 100vh;
+    overflow: hidden;
 }
 
 #header {
@@ -39,12 +41,12 @@ body {
 #content {
     margin-top: 150px; /* Adjust this value based on your header's height */
     width: 700px;
-    height: 700px;
-    min-height: 50vh;
+    height: 500px;
+    min-height: 70vh;
+    /*height: 70vh;*/
+    max-height: 500px;
     max-width: 1200px;
     padding: 20px;
-    padding-bottom: 500px;
-    margin-bottom: 500px;
     text-align: center;
     background: white;
     border-radius: 15px;
@@ -52,6 +54,13 @@ body {
     flex-direction: column;
     gap: 40px; /* Sets the gap between each div */
     font-family: Serif;
+    overflow-y: auto;
+    overflow-y: auto;
+    margin-bottom: 300px;
+}
+
+#content-wrapper {
+    padding-bottom: 200px;
 }
 
 button, .button {
@@ -136,7 +145,7 @@ a:hover, select:hover {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 200px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -156,8 +165,8 @@ footer, footer a, footer a:hover, footer a:active, footer a:visited {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 100px;
-    max-height: 100px;
+    height: 70px;
+    max-height: 70px;
 }
 
 .footer-logos img {
@@ -165,6 +174,12 @@ footer, footer a, footer a:hover, footer a:active, footer a:visited {
     object-fit: contain;          /* Maintain aspect ratio without stretching */
     margin: 0 10px;               /* Optional spacing between images */
     overflow: hidden;
+}
+
+footer p{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 200;
 }
 
 input {
@@ -203,5 +218,15 @@ form div div label.active {
 }
 
 .question {
+    margin-top: 0;
     font-size: 1.5em;
+}
+
+.question-container {
+    margin-top: 5px;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 0;
 }
