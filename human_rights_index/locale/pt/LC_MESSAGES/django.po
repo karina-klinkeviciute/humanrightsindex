@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 19:24+0000\n"
+"POT-Creation-Date: 2024-11-15 17:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,30 +20,27 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:68
+#: hri/forms.py:10 hri/forms.py:67
 msgid "Enter Group Code"
 msgstr "Digite o código do grupo"
 
-#: hri/forms.py:14
-msgid "Select your answer"
-msgstr "Selecione sua resposta"
-
-#: hri/forms.py:37
+#: hri/forms.py:36
 msgid ""
 "In your own life, which of those factors has the biggest impact on your "
 "vulnerability?"
 msgstr ""
 "Na sua vida, qual desses fatores tem o maior impacto na sua vulnerabilidade?"
 
-#: hri/forms.py:58
+#: hri/forms.py:57
 msgid "Code can only have letters and numbers"
 msgstr "O código só pode conter letras e números"
 
-#: hri/forms.py:62
+#: hri/forms.py:61
 msgid "A group with this code already exists. Please enter a different code"
-msgstr "Já existe um grupo com este código. Por favor, insira um código diferente"
+msgstr ""
+"Já existe um grupo com este código. Por favor, insira um código diferente"
 
-#: hri/forms.py:75
+#: hri/forms.py:74
 msgid "Please enter a valid group code."
 msgstr "Por favor, insira um código de grupo válido."
 
@@ -147,9 +144,41 @@ msgstr "Índice de direitos humanos"
 msgid "About the project"
 msgstr "Sobre o projeto"
 
-#: hri/templates/hri/base.html:42
+#: hri/templates/hri/base.html:45
 msgid "Privacy policy"
 msgstr "Política de privacidade"
+
+#: hri/templates/hri/base.html:55
+msgid ""
+"\n"
+"    This instrument is part of two projects, \"Rainbow Challenge – Twin "
+"Communities on\n"
+"            Human Rights.\" The project is partially funded by the European "
+"Union.\n"
+"            However, the opinions and views expressed are solely those of "
+"the authors\n"
+"            and do not necessarily reflect the views of the European Union "
+"or the\n"
+"            Agency of Youth Affairs (Lithuania). Neither the European Union "
+"nor the\n"
+"            granting authority can be held responsible for them. The "
+"development of\n"
+"            this instrument was partially supported by the Rosa Luxemburg "
+"Foundation\n"
+"            under the project \"Rainbow Challenge – Communities on Human "
+"Rights.\"\n"
+"        "
+msgstr ""
+"\n"
+"Este instrumento faz parte de dois projetos, \"Rainbow Challenge – "
+"Twin Communities on Human Rights\". O projeto é parcialmente financiado "
+"pela União Europeia. No entanto, as opiniões e pontos de vista expressos "
+"são exclusivamente dos autores e não refletem necessariamente os pontos de "
+"vista da União Europeia ou da Agência de Assuntos da Juventude (Lituânia). "
+"Nem a União Europeia nem a entidade que concede o financiamento podem ser "
+"responsabilizadas por eles. O desenvolvimento deste instrumento foi "
+"parcialmente apoiado pela Fundação Rosa Luxemburg no âmbito do projeto \"Rainbow"
+ "Challenge – Communities on Human Rights\"."
 
 #: hri/templates/hri/create_group.html:5
 msgid "Create a New Group"
@@ -160,8 +189,9 @@ msgid ""
 "Enter a group code. Group code may only consist of letters and numbers. "
 "Uppercase and lowercase letters count as the same."
 msgstr ""
-"Digite o código do grupo que está sendo criado. O código do grupo pode conter apenas letras e números. "
-"Letras maiúsculas e minúsculas não fazem diferença."
+"Digite o código do grupo que está sendo criado. O código do grupo pode "
+"conter apenas letras e números. Letras maiúsculas e minúsculas não fazem "
+"diferença."
 
 #: hri/templates/hri/create_group.html:24
 msgid "Save Group"
@@ -182,7 +212,9 @@ msgstr "Iniciar pesquisa"
 
 #: hri/templates/hri/enter_group_code.html:9
 msgid "If you have a group code, please enter it here"
-msgstr "Se você também tiver um código de grupo, insira-o aqui antes de começar a pesquisa"
+msgstr ""
+"Se você também tiver um código de grupo, insira-o aqui antes de começar a "
+"pesquisa"
 
 #: hri/templates/hri/index.html:6
 msgid ""
@@ -287,3 +319,6 @@ msgstr "Índice de direitos humanos para o seu grupo"
 #: hri/templates/hri/survey_complete.html:43
 msgid "Group vulnerability"
 msgstr "Vulnerabilidade do grupo"
+
+#~ msgid "Select your answer"
+#~ msgstr "Selecione sua resposta"

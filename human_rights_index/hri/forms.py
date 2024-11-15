@@ -11,7 +11,7 @@ class GroupCodeForm(forms.Form):
 
 
 class SurveyAnswerForm(forms.Form):
-    answer = forms.ChoiceField(widget=forms.RadioSelect, label=_(""))
+    answer = forms.ChoiceField(widget=forms.RadioSelect, label="")
 
     def __init__(self, *args, **kwargs):
         # Get the question instance passed in through the view

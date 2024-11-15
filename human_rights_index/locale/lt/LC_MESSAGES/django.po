@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 19:24+0000\n"
+"POT-Creation-Date: 2024-11-15 17:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,11 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:68
+#: hri/forms.py:10 hri/forms.py:67
 msgid "Enter Group Code"
 msgstr "Įveskite grupės kodą"
 
-#: hri/forms.py:14
-msgid "Select your answer"
-msgstr "Pasirinkite atsakymą"
-
-#: hri/forms.py:37
+#: hri/forms.py:36
 msgid ""
 "In your own life, which of those factors has the biggest impact on your "
 "vulnerability?"
@@ -36,15 +32,15 @@ msgstr ""
 "Jūsų gyvenime, kuris iš šių veiksnių daro didžiausią įtaką jūsų "
 "pažeidžiamumui?"
 
-#: hri/forms.py:58
+#: hri/forms.py:57
 msgid "Code can only have letters and numbers"
 msgstr "Kodas gali susidėti tik iš skaičių ir raidžių"
 
-#: hri/forms.py:62
+#: hri/forms.py:61
 msgid "A group with this code already exists. Please enter a different code"
 msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
 
-#: hri/forms.py:75
+#: hri/forms.py:74
 msgid "Please enter a valid group code."
 msgstr "Prašome įvesti tinkamą grupės kodą"
 
@@ -148,9 +144,39 @@ msgstr "Žmogaus teisių indeksas"
 msgid "About the project"
 msgstr "Apie projektą"
 
-#: hri/templates/hri/base.html:42
+#: hri/templates/hri/base.html:45
 msgid "Privacy policy"
 msgstr "Privatumo politika"
+
+#: hri/templates/hri/base.html:55
+msgid ""
+"\n"
+"    This instrument is part of two projects, \"Rainbow Challenge – Twin "
+"Communities on\n"
+"            Human Rights.\" The project is partially funded by the European "
+"Union.\n"
+"            However, the opinions and views expressed are solely those of "
+"the authors\n"
+"            and do not necessarily reflect the views of the European Union "
+"or the\n"
+"            Agency of Youth Affairs (Lithuania). Neither the European Union "
+"nor the\n"
+"            granting authority can be held responsible for them. The "
+"development of\n"
+"            this instrument was partially supported by the Rosa Luxemburg "
+"Foundation\n"
+"            under the project \"Rainbow Challenge – Communities on Human "
+"Rights.\"\n"
+"        "
+msgstr ""
+"\n"
+"Šis instrumentas yra dviejų projektų, „Rainbow Challenge – Twin Communities on "
+"Human Rights“, dalis. Projektas iš dalies finansuojamas Europos Sąjungos lėšomis. "
+"Tačiau išreikštos nuomonės ir požiūriai yra tik autorių ir nebūtinai atspindi "
+"Europos Sąjungos ar Jaunimo reikalų agentūros požiūrį. Nei Europos Sąjunga, "
+"nei dotaciją teikianti institucija negali būti laikoma atsakinga už juos. Šio "
+"instrumento kūrimą iš dalies parėmė Rosa Luxemburg fondas pagal projektas "
+"„Rainbow Challenge – Communities on Human Rights“"
 
 #: hri/templates/hri/create_group.html:5
 msgid "Create a New Group"
@@ -194,9 +220,10 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Ši apklausa padės jums apskaičiuoti jūsų galimą asmeninį pažeidžiamumo indeksą.\n"
-"Galite atlikti vieną iš trijų veiksmų: sukurti naują grupę, užpildyti apklausą "
-"pagal grupę, įvesdami jos kodą arba pildyti individualią apklausą"
+"    Ši apklausa padės jums apskaičiuoti jūsų galimą asmeninį pažeidžiamumo "
+"indeksą.\n"
+"Galite atlikti vieną iš trijų veiksmų: sukurti naują grupę, užpildyti "
+"apklausą pagal grupę, įvesdami jos kodą arba pildyti individualią apklausą"
 
 #: hri/templates/hri/index.html:13
 msgid "Start survey"
@@ -289,3 +316,5 @@ msgstr "Žmogaus teisių indeksas jūsų grupei"
 msgid "Group vulnerability"
 msgstr "Grupės pažeidžiamumas"
 
+#~ msgid "Select your answer"
+#~ msgstr "Pasirinkite atsakymą"

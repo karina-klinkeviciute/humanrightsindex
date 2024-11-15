@@ -150,6 +150,8 @@ footer {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 100%;
+    font-family: "Merriweather", Serif, serif;
 }
 
 footer, footer a, footer a:hover, footer a:active, footer a:visited {
@@ -163,8 +165,8 @@ footer, footer a, footer a:hover, footer a:active, footer a:visited {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 70px;
-    max-height: 70px;
+    height: 50px;
+    max-height: 50px;
 }
 
 .footer-logos img {
