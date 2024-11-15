@@ -9,6 +9,15 @@ from django.utils.translation import gettext_lazy as _
 class GroupCodeForm(forms.Form):
     code = forms.CharField(max_length=255, required=False, label=_('Enter Group Code'))
 
+    def clean_code(self):
+        code = self.cleaned_data.get('code').lower()
+
+        try:
+            group = Group.objects.get(code=code)
+        except Group.DoesNotExist:
+            raise forms.ValidationError(_("A group with this code does not exist."))
+
+        return code
 
 class SurveyAnswerForm(forms.Form):
     answer = forms.ChoiceField(widget=forms.RadioSelect, label="")
