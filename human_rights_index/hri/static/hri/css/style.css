@@ -171,12 +171,14 @@ footer a {
     overflow: hidden;
     height: 50px;
     max-height: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .footer-logos img {
     /*max-height: 100%;             !* Scale images to fit within container height *!*/
     object-fit: contain;          /* Maintain aspect ratio without stretching */
-    margin: 0 10px;               /* Optional spacing between images */
+    margin: 0 10px;
     overflow: hidden;
 }
 
