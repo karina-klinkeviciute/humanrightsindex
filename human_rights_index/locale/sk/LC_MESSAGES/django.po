@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 18:45+0000\n"
+"POT-Creation-Date: 2024-11-15 19:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,15 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:67
+#: hri/forms.py:10 hri/forms.py:76
 msgid "Enter Group Code"
 msgstr "Zadajte kód skupiny"
 
-#: hri/forms.py:36
+#: hri/forms.py:18
+msgid "Such code does not exist."
+msgstr "Taký kód neexistuje."
+
+#: hri/forms.py:45
 msgid ""
 "In your own life, which of those factors has the biggest impact on your "
 "vulnerability?"
@@ -32,15 +36,15 @@ msgstr ""
 "Vo vašom živote, ktorý z týchto faktorov má najväcší vplyv na vašu "
 "zranitelnost?"
 
-#: hri/forms.py:57
+#: hri/forms.py:66
 msgid "Code can only have letters and numbers"
 msgstr "Kód môže obsahovat iba písmená a císla"
 
-#: hri/forms.py:61
+#: hri/forms.py:70
 msgid "A group with this code already exists. Please enter a different code"
 msgstr "Skupina s týmto kódom už existuje. Zadajte iný kód"
 
-#: hri/forms.py:74
+#: hri/forms.py:83
 msgid "Please enter a valid group code."
 msgstr "Prosím vás, zadajte platný kód skupiny."
 
@@ -144,11 +148,11 @@ msgstr "Index ludských práv"
 msgid "About the project"
 msgstr "O projekte"
 
-#: hri/templates/hri/base.html:45
+#: hri/templates/hri/base.html:46
 msgid "Privacy policy"
 msgstr "Zásady ochrany osobných údajov"
 
-#: hri/templates/hri/base.html:55
+#: hri/templates/hri/base.html:56
 msgid ""
 "\n"
 "    This instrument is part of two projects, \"Rainbow Challenge – Twin "
