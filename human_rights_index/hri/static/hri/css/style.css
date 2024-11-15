@@ -157,6 +157,9 @@ footer {
 footer, footer a, footer a:hover, footer a:active, footer a:visited {
     background-color: #323232;
     color: white;
+}
+
+footer a {
     text-transform: uppercase;
 }
 
