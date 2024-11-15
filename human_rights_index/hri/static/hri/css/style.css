@@ -169,10 +169,11 @@ footer a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 50px;
-    max-height: 50px;
+    height: 40px;
+    max-height: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-right: 20px;
 }
 
 .footer-logos img {
