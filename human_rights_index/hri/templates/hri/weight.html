@@ -1,4 +1,5 @@
 {% extends "hri/base.html" %}
+{% load i18n %}
 
 {% block content %}
 
@@ -8,7 +9,7 @@
         <form method="POST" action="{% url 'weight' survey.id %}">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Submit</button>
+            <button type="submit">{% translate "Submit" %}</button>
         </form>
     </div>
 
