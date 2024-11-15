@@ -105,7 +105,7 @@ select, select option {
   appearance: none; /* Remove default appearance in other browsers */
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
     box-shadow: none;
     outline: none;
     text-decoration: none;
