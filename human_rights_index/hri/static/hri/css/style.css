@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 
 html, body {
@@ -51,10 +52,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px; /* Sets the gap between each div */
-    font-family: Serif;
-    overflow-y: auto;
+    font-family: Merriweather, Serif, serif;
     overflow-y: auto;
     margin-bottom: 300px;
+    font-size: 24px;
 }
 
 #content-wrapper {
