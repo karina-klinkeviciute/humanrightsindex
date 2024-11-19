@@ -12,10 +12,11 @@ class GroupCodeForm(forms.Form):
     def clean_code(self):
         code = self.cleaned_data.get('code').lower()
 
-        try:
-            group = Group.objects.get(code=code)
-        except Group.DoesNotExist:
-            raise forms.ValidationError(_("Such code does not exist."))
+        if code:
+            try:
+                group = Group.objects.get(code=code)
+            except Group.DoesNotExist:
+                raise forms.ValidationError(_("Such code does not exist."))
 
         return code
 
