@@ -17,8 +17,8 @@
       {% if group.score %}
         <p><strong>{% translate "Score" %}:</strong> {{ group.score|floatformat:0 }}</p>
           {% endif %}
-  {% elif form.errors %}
-    <p style="color:red;">{{ form.errors.code }}</p>
+{#  {% elif form.errors %}#}
+{#    <p style="color:red;">{{ form.errors.code }}</p>#}
   {% endif %}
   
 {% endblock %}

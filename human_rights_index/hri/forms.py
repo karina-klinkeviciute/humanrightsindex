@@ -83,5 +83,11 @@ class GroupSearchForm(forms.Form):
         if not code:
             raise forms.ValidationError(_("Please enter a valid group code."))
 
+        else:
+            try:
+                group = Group.objects.get(code=code)
+            except Group.DoesNotExist:
+                raise forms.ValidationError(_("Such code does not exist."))
+
         return code
 
