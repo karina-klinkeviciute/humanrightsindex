@@ -1,6 +1,6 @@
 /human_rights_index/.env
 /human_rights_index/static
-__pycache__/
+*__pycache__/
 *.pyc
 /venv
 django-logfile

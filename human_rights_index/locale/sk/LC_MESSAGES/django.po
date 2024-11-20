@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 19:52+0000\n"
+"POT-Creation-Date: 2024-11-19 21:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: hri/forms.py:10 hri/forms.py:76
+#: hri/forms.py:10 hri/forms.py:77
 msgid "Enter Group Code"
 msgstr "Zadajte kód skupiny"
 
-#: hri/forms.py:18
+#: hri/forms.py:19 hri/forms.py:90
 msgid "Such code does not exist."
 msgstr "Taký kód neexistuje."
 
-#: hri/forms.py:45
+#: hri/forms.py:46
 msgid ""
 "In your own life, which of those factors has the biggest impact on your "
 "vulnerability?"
@@ -36,15 +36,15 @@ msgstr ""
 "Vo vašom živote, ktorý z týchto faktorov má najväcší vplyv na vašu "
 "zranitelnost?"
 
-#: hri/forms.py:66
+#: hri/forms.py:67
 msgid "Code can only have letters and numbers"
 msgstr "Kód môže obsahovat iba písmená a císla"
 
-#: hri/forms.py:70
+#: hri/forms.py:71
 msgid "A group with this code already exists. Please enter a different code"
 msgstr "Skupina s týmto kódom už existuje. Zadajte iný kód"
 
-#: hri/forms.py:83
+#: hri/forms.py:84
 msgid "Please enter a valid group code."
 msgstr "Prosím vás, zadajte platný kód skupiny."
 
@@ -241,6 +241,10 @@ msgstr "Registrovat skupinu"
 #: hri/templates/hri/index.html:15
 msgid "Check group results"
 msgstr "Skontrolovat výsledky skupiny"
+
+#: hri/templates/hri/search_group.html:5
+msgid "Search for a group"
+msgstr ""
 
 #: hri/templates/hri/search_group.html:10
 msgid "Search"
