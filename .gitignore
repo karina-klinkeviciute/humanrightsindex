@@ -1,4 +1,7 @@
 /human_rights_index/.env
-.venv
-.idea
+/human_rights_index/static
+__pycache__/
 *.pyc
+/venv
+django-logfile
+.idea
