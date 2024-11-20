@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
+from django.utils.translation import gettext_lazy as _
 
 from django.shortcuts import get_object_or_404
-from django.urls import reverse_lazy
 from django.views.generic import FormView, View, TemplateView, CreateView
 
 from .forms import GroupCodeForm, SurveyAnswerForm, WeightForm, GroupForm, GroupSearchForm
@@ -142,7 +142,8 @@ class GroupSearchView(CreateView):
                 # Try to fetch the group with the provided code
                 group = Group.objects.get(code=code)
             except Group.DoesNotExist:
-                form.add_error('code', 'Group with this code does not exist.')
+                pass
+                # form.add_error('code', _('Such code does not exist.'))
 
         return render(request, self.template_name, {'form': form, 'group': group})
 
