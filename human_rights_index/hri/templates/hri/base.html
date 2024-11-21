@@ -43,7 +43,6 @@
         </div>
     </div>
 <footer>
-    <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>
     <div class="footer-logos">
     <img src="{% static 'hri/images/TJA_baltas.svg' %}">
     <img src="{% static 'hri/images/saplinq_logo_baltas.svg' %}">
@@ -52,6 +51,7 @@
     <img src="{% static 'hri/images/JRA_logo_B.svg' %}">
     <img src="{% static 'hri/images/Rosa_logo_baltas.svg' %}">
     </div>
+    <br>
     <p>
         {% blocktranslate %}
     This instrument is part of two projects, "Rainbow Challenge – Twin Communities on
@@ -64,6 +64,8 @@
             under the project "Rainbow Challenge – Communities on Human Rights."
         {% endblocktranslate %}
     </p>
+    <br>
+    <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>
 </footer>
 <script src="{% static 'hri/js/functions.js'%}"></script>
 </body>
