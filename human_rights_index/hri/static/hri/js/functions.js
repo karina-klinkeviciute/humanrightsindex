@@ -12,3 +12,15 @@ labels.forEach(label => {
         label.classList.add('active');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const pageTitle = document.querySelector('#page-title');
+    // Add the scroll event listener
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 1) { // Fade out the title if scrolled down even slightly
+            pageTitle.classList.add('hidden');
+        } else {
+            pageTitle.classList.remove('hidden');
+        }
+    });
+});
