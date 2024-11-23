@@ -84,7 +84,6 @@ html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 768px) {
     #content {
         width: 100%; /* Take full width on smaller screens */
-        font-size: 18px; /* Adjust font size for better readability */
     }
     #content::after {
         height: 15px; /* Reduce the fade height on small screens */
@@ -207,8 +206,8 @@ footer a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 40px;
-    max-height: 40px;
+    height: 50px;
+    max-height: 50px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right: 20px;
@@ -266,9 +265,21 @@ form div div label.active {
 
 .question {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 24px;  /* Fixed font size */
     text-align: left;
-    /*text-wrap: balance;*/
+    width: 100%;  /* Takes full width of parent container */
+    max-width: 600px;  /* Optional: Restrict the width on large screens */
+    min-width: 300px;  /* Optional: Ensure box doesn't shrink too small */
+    box-sizing: border-box;  /* Includes padding and border in total size */
+    padding: 10px;  /* Optional: Space inside the box */
+    overflow-wrap: break-word;  /* Prevents long words from overflowing */
+    word-wrap: break-word;  /* Ensures long words wrap to the next line */
+    line-height: 1.5;  /* Improves text readability */
+    height: auto;  /* Allows the height to adjust to content */
+    max-height: 150px;  /* Optional: Prevents box from becoming too tall */
+    background-color: transparent;  /* Makes the background invisible */
+    border: none;  /* Removes the border */
+    box-shadow: none;  /* Removes any shadow (optional) */
 }
 
 .question-container {
