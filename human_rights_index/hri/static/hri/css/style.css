@@ -84,7 +84,6 @@ html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 768px) {
     #content {
         width: 100%; /* Take full width on smaller screens */
-        font-size: 18px; /* Adjust font size for better readability */
     }
     #content::after {
         height: 15px; /* Reduce the fade height on small screens */
@@ -100,7 +99,7 @@ html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
     flex-grow: 1; /* Content fills remaining space */
     width: 100%;
     margin-top: 150px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     align-items: center; /* Centers content horizontally */
 }
 
@@ -194,7 +193,7 @@ footer {
     background-color: #323232;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 3% 0;
 }
 
 footer a {
@@ -204,25 +203,45 @@ footer a {
 
 .footer-logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.footer-logos a {
+    display: flex;
     align-items: center;
-    overflow: hidden;
-    height: 40px;
-    max-height: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 50px;
 }
 
 .footer-logos img {
-    /*max-height: 100%;             !* Scale images to fit within container height *!*/
-    object-fit: contain;          /* Maintain aspect ratio without stretching */
-    margin: 0 10px;
-    overflow: hidden;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer-logos img {
+        max-width: 35%;
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logos img {
+        max-width: 45%;
+        min-width: 60px;
+    }
 }
 
 footer p {
-    margin: 0 10px;
+    margin: 5px 10px;
     font-size: 10px;
     font-weight: 200;
 }
@@ -266,9 +285,21 @@ form div div label.active {
 
 .question {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 24px;  /* Fixed font size */
     text-align: left;
-    /*text-wrap: balance;*/
+    width: 100%;  /* Takes full width of parent container */
+    max-width: 600px;  /* Optional: Restrict the width on large screens */
+    min-width: 300px;  /* Optional: Ensure box doesn't shrink too small */
+    box-sizing: border-box;  /* Includes padding and border in total size */
+    padding: 10px;  /* Optional: Space inside the box */
+    overflow-wrap: break-word;  /* Prevents long words from overflowing */
+    word-wrap: break-word;  /* Ensures long words wrap to the next line */
+    line-height: 1.5;  /* Improves text readability */
+    height: auto;  /* Allows the height to adjust to content */
+    max-height: 150px;  /* Optional: Prevents box from becoming too tall */
+    background-color: transparent;  /* Makes the background invisible */
+    border: none;  /* Removes the border */
+    box-shadow: none;  /* Removes any shadow (optional) */
 }
 
 .question-container {
