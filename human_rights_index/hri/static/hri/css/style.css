@@ -316,3 +316,24 @@ h3 {
     color: red;
     list-style-type: none;
 }
+
+/* Make the text before colon bold */
+.bold-before-colon {
+    font-weight: normal;
+}
+
+.bold-before-colon::first-line {
+    font-weight: bold; /* Apply bold styling to the first part (before colon) */
+}
+
+/* Vulnerability scale formatting */
+.vulnerability-scale {
+    text-align: left; /* Align the text to the left for readability */
+    line-height: 1.8; /* Add spacing between rows */
+    margin-top: 20px; /* Add spacing above the scale for separation */
+    font-size: 1em; /* Ensure uniform font size */
+}
+
+.vulnerability-scale span {
+    font-weight: bold; /* Emphasize range labels */
+}

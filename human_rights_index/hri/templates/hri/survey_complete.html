@@ -2,75 +2,57 @@
 {% load i18n %}
 
 {% block content %}
-    <p>
-        {% translate "Your personal human rights index" %}: {{ survey.score|floatformat:0 }} {% translate "out of 100 points" %}.
-
-    </p>
-    <p>
-        {% translate "Vulnerability" %}:
-
-            {% if survey.score <= 20 %}
-
-            {% translate "very vulnerable" %}
-
-            {% elif survey.score <= 40 %}
-
-            {% translate "more vulnerable" %}
-
-            {% elif survey.score <= 60 %}
-
-            {% translate "medium vulnerability" %}
-
-            {% elif survey.score <= 80 %}
-
-            {% translate "a little vulnerable" %}
-
-            {% else %}
-
-            {% translate "very invulnerable" %}
-
-            {% endif %}
-
-
-    </p>
-    {% if group %}
-
-        <p>
-            {% translate "Human right index for your group" %}: {{ group.score|floatformat:0 }} {% translate "out of 100 points" %}.
-        </p>
-
-        <p>
-        {% translate "Group vulnerability" %}:
-        {% if group.score <= 20 %}
-
-            {% translate "very vulnerable" %}
-
-            {% elif group.score <= 40 %}
-
-            {% translate "more vulnerable" %}
-
-            {% elif group.score <= 60 %}
-
-            {% translate "medium vulnerability" %}
-
-            {% elif group.score <= 80 %}
-
-            {% translate "a little vulnerable" %}
-
-            {% else %}
-
-            {% translate "very invulnerable" %}
-
-            {% endif %}
+<p class="bold-before-colon">
+    {% translate "Your personal human rights index" %}:
+    <br>
+    {{ survey.score|floatformat:0 }} {% translate "out of 100 points" %}.
 </p>
+
+<p class="bold-before-colon">
+    {% translate "Vulnerability" %}: 
+    <br>
+    {% if survey.score <= 20 %}
+        {% translate "very vulnerable" %}
+    {% elif survey.score <= 40 %}
+        {% translate "more vulnerable" %}
+    {% elif survey.score <= 60 %}
+        {% translate "medium vulnerability" %}
+    {% elif survey.score <= 80 %}
+        {% translate "a little vulnerable" %}
+    {% else %}
+        {% translate "very invulnerable" %}
     {% endif %}
+</p>
 
-    <p>
+{% if group %}
+<p class="bold-before-colon">
+    {% translate "Human right index for your group" %}:
+    <br>
+    {{ group.score|floatformat:0 }} {% translate "out of 100 points" %}.
+</p>
 
-     - 0-20: {% translate "very vulnerable" %}
- - 21-40: {% translate "more vulnerable" %}
- - 41-60: {% translate "medium vulnerability" %}
- - 61-80: {% translate "a little vulnerable" %}
- - 81-100: {% translate "very invulnerable" %}
+<p class="bold-before-colon">
+{% translate "Group vulnerability" %}:
+{% if group.score <= 20 %}
+    {% translate "very vulnerable" %}
+    {% elif group.score <= 40 %}
+    {% translate "more vulnerable" %}
+    {% elif group.score <= 60 %}
+    {% translate "medium vulnerability" %}
+    {% elif group.score <= 80 %}
+    {% translate "a little vulnerable" %}
+    {% else %}
+    {% translate "very invulnerable" %}
+    {% endif %}
+</p>
+{% endif %}
+
+<p class="vulnerability-scale">
+    0-20: {% translate "very vulnerable" %}<br>
+    21-40: {% translate "more vulnerable" %}<br>
+    41-60: {% translate "medium vulnerability" %}<br>
+    61-80: {% translate "a little vulnerable" %}<br>
+    81-100: {% translate "very invulnerable" %}
+</p>
 
 {% endblock %}
