@@ -328,7 +328,7 @@ h3 {
 
 /* Vulnerability scale formatting */
 .vulnerability-scale {
-    text-align: left; /* Align the text to the left for readability */
+    text-align: center; /* Align the text to the left for readability */
     line-height: 1.8; /* Add spacing between rows */
     margin-top: 20px; /* Add spacing above the scale for separation */
     font-size: 1em; /* Ensure uniform font size */
@@ -336,4 +336,54 @@ h3 {
 
 .vulnerability-scale span {
     font-weight: bold; /* Emphasize range labels */
+}
+/* Adjusted container for layout and alignment */
+.search-container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Title */
+.search-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form fields alignment */
+.form-fields {
+    margin-bottom: 20px;
+}
+
+/* Search button */
+.search-button {
+    padding: 10px;
+    background-color: #947DB5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #7a659e;
+}
+
+/* Group details styling */
+.group-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.details-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.details-item {
+    margin: 5px 0;
 }
