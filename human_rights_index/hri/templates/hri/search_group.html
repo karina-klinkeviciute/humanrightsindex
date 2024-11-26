@@ -2,23 +2,33 @@
 {% load i18n %}
 
 {% block content %}
-  <h1>{% translate "Search for a group" %}</h1>
-  
-  <form method="post">
+  <div class="search-container">
+    <h1 class="search-title">{% translate "Search for a group" %}</h1>
+    
+    <form method="post" class="search-form">
       {% csrf_token %}
-      {{ form.as_p }}
-      <button type="submit">{% translate "Search" %}</button>
-  </form>
+      <div class="form-fields">
+        {{ form.as_p }}
+      </div>
+      <button type="submit" class="search-button">{% translate "Search" %}</button>
+    </form>
 
-  {% if group %}
-    <h2>{% translate "Group Details" %}:</h2>
-    <p><strong>Name:</strong> {{ group.name }}</p>
-    <p><strong>Code:</strong> {{ group.code }}</p>
-      {% if group.score %}
-        <p><strong>{% translate "Score" %}:</strong> {{ group.score|floatformat:0 }}</p>
-          {% endif %}
-{#  {% elif form.errors %}#}
-{#    <p style="color:red;">{{ form.errors.code }}</p>#}
-  {% endif %}
-  
+    {% if group %}
+      <div class="group-details">
+        <h2 class="details-title">{% translate "Group Details" %}:</h2>
+        <p class="details-item"><strong>{% translate "Code" %}:</strong> {{ group.code }}</p>
+        {% if group.score %}
+          <p class="details-item"><strong>{% translate "Score" %}:</strong> {{ group.score|floatformat:0 }}</p>
+        {% endif %}
+        <p class="vulnerability-scale">
+          0-20: {% translate "very vulnerable" %}<br>
+          21-40: {% translate "more vulnerable" %}<br>
+          41-60: {% translate "medium vulnerability" %}<br>
+          61-80: {% translate "a little vulnerable" %}<br>
+          81-100: {% translate "very invulnerable" %}
+      </p>
+      </div>
+    {% endif %}
+  </div>
 {% endblock %}
+
