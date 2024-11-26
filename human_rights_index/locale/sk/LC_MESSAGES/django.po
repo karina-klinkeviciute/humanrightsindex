@@ -244,7 +244,7 @@ msgstr "Skontrolovat výsledky skupiny"
 
 #: hri/templates/hri/search_group.html:5
 msgid "Search for a group"
-msgstr ""
+msgstr "Skontrolovať výsledky skupiny"
 
 #: hri/templates/hri/search_group.html:10
 msgid "Search"
