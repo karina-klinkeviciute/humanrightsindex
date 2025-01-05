@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %} - {% translate "Human rights index" %}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'hri/images/favicon.png' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'hri/css/style.css' %}">
 </head>
 
@@ -43,15 +44,15 @@
         </div>
     </div>
 <footer>
-    <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>
     <div class="footer-logos">
-    <img src="{% static 'hri/images/TJA_baltas.svg' %}">
-    <img src="{% static 'hri/images/saplinq_logo_baltas.svg' %}">
-    <img src="{% static 'hri/images/ILGA_logo_baltas.svg' %}">
-    <img src="{% static 'hri/images/EU_logo_baltas.svg' %}">
-    <img src="{% static 'hri/images/JRA_logo_B.svg' %}">
-    <img src="{% static 'hri/images/Rosa_logo_baltas.svg' %}">
+    <a href="https://tja.lt/"><img src="{% static 'hri/images/TJA_baltas.svg' %}"></a>
+    <a href="https://www.saplinq.org/"><img src="{% static 'hri/images/saplinq_logo_baltas.svg' %}"></a>
+    <a href="https://ilga-portugal.pt"><img src="{% static 'hri/images/ILGA_logo_baltas.svg' %}"></a>
+    <a href="https://erasmus-plius.lt"><img src="{% static 'hri/images/EU_logo_baltas.svg' %}"></a>
+    <a href="https://jra.lt"><img src="{% static 'hri/images/JRA_logo_B.svg' %}"></a>
+    <a href="https://www.rosalux.de/"><img src="{% static 'hri/images/Rosa_logo_baltas.svg' %}"></a>
     </div>
+    <br>
     <p>
         {% blocktranslate %}
     This instrument is part of two projects, "Rainbow Challenge – Twin Communities on
@@ -64,6 +65,8 @@
             under the project "Rainbow Challenge – Communities on Human Rights."
         {% endblocktranslate %}
     </p>
+    <br>
+    <p><a href="{% url "text" "privacy" %}">{% translate "Privacy policy" %}</a></p>
 </footer>
 <script src="{% static 'hri/js/functions.js'%}"></script>
 </body>

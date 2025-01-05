@@ -243,7 +243,7 @@ msgstr "Tikrinti grupės rezultatus"
 
 #: hri/templates/hri/search_group.html:5
 msgid "Search for a group"
-msgstr "Ieškoti grupės"
+msgstr "Patikrinti grupės rezultatus"
 
 #: hri/templates/hri/search_group.html:10
 msgid "Search"
