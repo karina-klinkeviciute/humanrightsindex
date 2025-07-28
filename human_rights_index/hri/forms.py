@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class GroupCodeForm(forms.Form):
-    code = forms.CharField(max_length=255, required=False, label=_('Enter Group Code'))
+    code = forms.CharField(max_length=255, required=False)
 
     def clean_code(self):
         code = self.cleaned_data.get('code').lower()
