@@ -22,6 +22,7 @@ class SurveyAdmin(admin.ModelAdmin):
     list_display = ('id', 'group', 'created_at', )
     search_fields = ('group__code', )
     list_filter = ('group', )
+    readonly_fields = ('created_at', )
 
 
 @admin.register(Answer)
