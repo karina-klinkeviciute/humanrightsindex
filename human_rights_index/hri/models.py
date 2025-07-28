@@ -36,6 +36,7 @@ class Survey(models.Model):
     group = models.ForeignKey(Group, verbose_name=_("group"), on_delete=models.CASCADE, null=True, blank=True)
     score = models.FloatField(verbose_name=_("score"), null=True, blank=True)
     weight = models.ForeignKey('Weight', verbose_name=_("weight"), on_delete=models.SET_NULL, null=True, blank=True)
+    created_at = models.DateTimeField(verbose_name=_("created at"), auto_now_add=True)
 
     def calculate_score(self):
         score = 0
