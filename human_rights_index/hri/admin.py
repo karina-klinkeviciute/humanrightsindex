@@ -19,7 +19,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 @admin.register(Survey)
 class SurveyAdmin(admin.ModelAdmin):
-    list_display = ('id', 'group', 'created_at', )
+    list_display = ('id', 'group__code', 'created_at', )
     search_fields = ('group__code', )
     list_filter = ('group', )
     readonly_fields = ('created_at', )
