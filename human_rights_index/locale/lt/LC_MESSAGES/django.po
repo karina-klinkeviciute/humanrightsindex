@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 21:19+0000\n"
+"POT-Creation-Date: 2025-08-11 18:44+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
-
-#: hri/forms.py:10 hri/forms.py:77
-msgid "Enter Group Code"
-msgstr "Įveskite grupės kodą"
 
 #: hri/forms.py:19 hri/forms.py:90
 msgid "Such code does not exist."
@@ -43,6 +39,10 @@ msgstr "Kodas gali susidėti tik iš skaičių ir raidžių"
 #: hri/forms.py:71
 msgid "A group with this code already exists. Please enter a different code"
 msgstr "Grupė su šiuo kodu jau yra. Įveskite kitą kodą"
+
+#: hri/forms.py:77
+msgid "Enter Group Code"
+msgstr "Įveskite grupės kodą"
 
 #: hri/forms.py:84
 msgid "Please enter a valid group code."
@@ -66,7 +66,7 @@ msgstr "rezultatas"
 msgid "weight_answer"
 msgstr "Svertinis atsakymas"
 
-#: hri/models.py:25 hri/models.py:69
+#: hri/models.py:25 hri/models.py:70
 msgid "question"
 msgstr "klausimas"
 
@@ -94,65 +94,61 @@ msgstr "grupė"
 msgid "weight"
 msgstr "svertas"
 
-#: hri/models.py:66
+#: hri/models.py:39 hri/models.py:79
+msgid "created at"
+msgstr "sukurta"
+
+#: hri/models.py:67
 msgid "Zero point answer"
 msgstr "Nulio taškų atsakymas"
 
-#: hri/models.py:67
+#: hri/models.py:68
 #, fuzzy
 #| msgid "Zero point answer"
 msgid "One point answer"
 msgstr "Vieno taško atsakymas"
 
-#: hri/models.py:68
+#: hri/models.py:69
 msgid "Two points answer"
 msgstr "Dviejų taškų atsakymas"
 
-#: hri/models.py:70
+#: hri/models.py:71
 msgid "survey"
 msgstr "apklausa"
 
-#: hri/models.py:71
+#: hri/models.py:72
 msgid "option"
 msgstr "pasirinkimas"
 
-#: hri/models.py:75
+#: hri/models.py:76
 msgid "body"
 msgstr "tekstas"
 
-#: hri/models.py:76
+#: hri/models.py:77
 msgid "title"
 msgstr "pavadinimas"
 
-#: hri/models.py:77
+#: hri/models.py:78
 msgid "notes"
 msgstr "pastabos"
 
-#: hri/models.py:78
-msgid "created at"
-msgstr "sukurta"
-
-#: hri/models.py:79
+#: hri/models.py:80
 msgid "updated at"
 msgstr "atnaujinta"
 
-#: hri/models.py:80
+#: hri/models.py:81
 msgid "slug"
 msgstr "slugas"
 
-#: hri/templates/hri/base.html:7 hri/templates/hri/base.html:14
+#: hri/templates/hri/base.html:7 hri/templates/hri/base.html:15
 msgid "Human rights index"
 msgstr "Žmogaus teisių indeksas"
 
-#: hri/templates/hri/base.html:15
+#: hri/templates/hri/base.html:16
 msgid "About the project"
 msgstr "Apie projektą"
 
-#: hri/templates/hri/base.html:46
-msgid "Privacy policy"
-msgstr "Privatumo politika"
-
-#: hri/templates/hri/base.html:56
+#: hri/templates/hri/base.html:57
 msgid ""
 "\n"
 "    This instrument is part of two projects, \"Rainbow Challenge – Twin "
@@ -182,11 +178,34 @@ msgstr ""
 "atsakinga už juos. Šio instrumento kūrimą iš dalies parėmė Rosa Luxemburg "
 "fondas pagal projektas „Rainbow Challenge – Communities on Human Rights“"
 
+#: hri/templates/hri/base.html:69
+msgid "Privacy policy"
+msgstr "Privatumo politika"
+
 #: hri/templates/hri/create_group.html:5
 msgid "Create a New Group"
 msgstr "Sukurti naują grupę"
 
 #: hri/templates/hri/create_group.html:6
+msgid ""
+"\n"
+"        A group is a set of people who take the test using the same group "
+"code, for example during a lesson,\n"
+"        training session, or within an organization. When at least 5 "
+"participants complete the test, the system\n"
+"        provides a summarized group result — the average score. This allows "
+"you to compare your individual\n"
+"        vulnerability score (visible only to you) with the group average.\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"Grupė – tai keli žmonės, kurie atlieka testą naudodami tą patį grupės kodą, pavyzdžiui, per pamoką, mokymus"
+"ar organizacijos viduje. Kai testą užpildo bent 5 dalyviai, sistema pateikia apibendrintą grupės rezultatą – vidurkį."
+"Taip galite palyginti savo individualų pažeidžiamumo įvertinimą (kurį matote tik jūs) su grupės vidurkiu."
+"\n"
+"    "
+#: hri/templates/hri/create_group.html:13
 msgid ""
 "Enter a group code. Group code may only consist of letters and numbers. "
 "Uppercase and lowercase letters count as the same."
@@ -194,7 +213,7 @@ msgstr ""
 "Įveskite kuriamos grupės kodą. Jis gali susidėti tik iš raidžių ir skaičių. "
 "Didžiosios ir mažosios raidės reikšmės neturi."
 
-#: hri/templates/hri/create_group.html:24
+#: hri/templates/hri/create_group.html:31
 msgid "Save Group"
 msgstr "Išsaugoti grupę"
 
@@ -206,6 +225,7 @@ msgstr "Sveikiname! Jūsų grupė sėkmingai sukurta."
 msgid "Group Code"
 msgstr "Grupės kodas"
 
+#: hri/templates/hri/create_group_success.html:8
 #: hri/templates/hri/enter_group_code.html:4
 #: hri/templates/hri/enter_group_code.html:13
 msgid "Start Survey"
@@ -241,21 +261,60 @@ msgstr "Užregistruoti grupę"
 msgid "Check group results"
 msgstr "Tikrinti grupės rezultatus"
 
-#: hri/templates/hri/search_group.html:5
+#: hri/templates/hri/search_group.html:6
 msgid "Search for a group"
 msgstr "Patikrinti grupės rezultatus"
 
-#: hri/templates/hri/search_group.html:10
+#: hri/templates/hri/search_group.html:13
 msgid "Search"
 msgstr "Paieška"
 
-#: hri/templates/hri/search_group.html:14
+#: hri/templates/hri/search_group.html:18
 msgid "Group Details"
 msgstr "Grupės rezultatai"
 
-#: hri/templates/hri/search_group.html:18
+#: hri/templates/hri/search_group.html:19
+msgid "Code"
+msgstr ""
+
+#: hri/templates/hri/search_group.html:21
 msgid "Score"
 msgstr "Rezultatas"
+
+#: hri/templates/hri/search_group.html:24
+#: hri/templates/hri/survey_complete.html:15
+#: hri/templates/hri/survey_complete.html:37
+#: hri/templates/hri/survey_complete.html:51
+msgid "very vulnerable"
+msgstr "labai pažeidžiama/s"
+
+#: hri/templates/hri/search_group.html:25
+#: hri/templates/hri/survey_complete.html:17
+#: hri/templates/hri/survey_complete.html:39
+#: hri/templates/hri/survey_complete.html:52
+msgid "more vulnerable"
+msgstr "labiau pažeidžiama/s"
+
+#: hri/templates/hri/search_group.html:26
+#: hri/templates/hri/survey_complete.html:19
+#: hri/templates/hri/survey_complete.html:41
+#: hri/templates/hri/survey_complete.html:53
+msgid "medium vulnerability"
+msgstr "vidutiniškai pažeidžiama/s"
+
+#: hri/templates/hri/search_group.html:27
+#: hri/templates/hri/survey_complete.html:21
+#: hri/templates/hri/survey_complete.html:43
+#: hri/templates/hri/survey_complete.html:54
+msgid "a little vulnerable"
+msgstr "šiek tiek pažeidžiama/s"
+
+#: hri/templates/hri/search_group.html:28
+#: hri/templates/hri/survey_complete.html:23
+#: hri/templates/hri/survey_complete.html:45
+#: hri/templates/hri/survey_complete.html:55
+msgid "very invulnerable"
+msgstr "labai nepažeidžiama/s"
 
 #: hri/templates/hri/survey.html:5
 msgid "Survey Progress"
@@ -277,52 +336,60 @@ msgstr "Ankstesnis"
 msgid "Your personal human rights index"
 msgstr "Jūsų asmeninis žmogaus teisių indeksas"
 
-#: hri/templates/hri/survey_complete.html:6
-#: hri/templates/hri/survey_complete.html:39
+#: hri/templates/hri/survey_complete.html:8
+#: hri/templates/hri/survey_complete.html:31
 msgid "out of 100 points"
 msgstr "iš 100 taškų"
 
-#: hri/templates/hri/survey_complete.html:10
+#: hri/templates/hri/survey_complete.html:12
 msgid "Vulnerability"
 msgstr "Pažeidžiamumas"
 
-#: hri/templates/hri/survey_complete.html:14
-#: hri/templates/hri/survey_complete.html:46
-#: hri/templates/hri/survey_complete.html:70
-msgid "very vulnerable"
-msgstr "labai pažeidžiama/s"
-
-#: hri/templates/hri/survey_complete.html:18
-#: hri/templates/hri/survey_complete.html:50
-#: hri/templates/hri/survey_complete.html:71
-msgid "more vulnerable"
-msgstr "labiau pažeidžiama/s"
-
-#: hri/templates/hri/survey_complete.html:22
-#: hri/templates/hri/survey_complete.html:54
-#: hri/templates/hri/survey_complete.html:72
-msgid "medium vulnerability"
-msgstr "vidutiniškai pažeidžiama/s"
-
-#: hri/templates/hri/survey_complete.html:26
-#: hri/templates/hri/survey_complete.html:58
-#: hri/templates/hri/survey_complete.html:73
-msgid "a little vulnerable"
-msgstr "šiek tiek pažeidžiama/s"
-
-#: hri/templates/hri/survey_complete.html:30
-#: hri/templates/hri/survey_complete.html:62
-#: hri/templates/hri/survey_complete.html:74
-msgid "very invulnerable"
-msgstr "labai nepažeidžiama/s"
-
-#: hri/templates/hri/survey_complete.html:39
+#: hri/templates/hri/survey_complete.html:29
 msgid "Human right index for your group"
 msgstr "Žmogaus teisių indeksas jūsų grupei"
 
-#: hri/templates/hri/survey_complete.html:43
+#: hri/templates/hri/survey_complete.html:35
 msgid "Group vulnerability"
 msgstr "Grupės pažeidžiamumas"
+
+#: hri/templates/hri/survey_complete.html:58
+msgid ""
+"\n"
+"    Human rights matter to everyone – no matter your quiz result, if you're "
+"feeling unsafe or going through a\n"
+"    difficult time, it's important to know that help is available. You can "
+"find emotional and psychological\n"
+"    support through national services or local organizations. And if "
+"reaching out to unfamiliar professionals\n"
+"    feels hard, you can always contact a trusted youth or LGBTQ+ "
+"organization – together, we’ll find a way forward.\n"
+msgstr ""
+"\n"
+" Žmogaus teisės svarbios kiekvienam – nepaisant jūsų rezultato, jei "
+"jaučiatės nesaugiai ar patiriate sunkumų, svarbu žinoti, kad pagalba yra "
+"pasiekiama. Emocinę ir psichologinę paramą galite rasti čia: <a "
+"href=\"https://socmin.lrv.lt/lt/veiklos-sritys/socialine-integracija/emocine-"
+"ir-psichologine-pagalba/\">socmin.lrv.lt</a> O jei sunku kreiptis į "
+"nežinomus specialistus, visada galite susisiekti su Tolerantiško jaunimo "
+"asociacija – kartu rasime sprendimą:<a href=\"https://tja.lt/\">tja.lt</a>\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "    Žmogaus teisės svarbios kiekvienam – nepaisant jūsų rezultato, jei "
+#~ "jaučiatės nesaugiai ar patiriate sunkumų,\n"
+#~ "    svarbu žinoti, kad pagalba yra pasiekiama. Emocinę ir psichologinę "
+#~ "paramą galite rasti\n"
+#~ "    čia: <a href=\"https://socmin.lrv.lt/lt/veiklos-sritys/socialine-"
+#~ "integracija/emocine-ir-psichologine-pagalba/\">socmin.lrv.lt</a>\n"
+#~ "    O jei sunku kreiptis į nežinomus specialistus, visada galite "
+#~ "susisiekti su Tolerantiško jaunimo asociacija – kartu rasime sprendimą:\n"
+#~ "    <a href=\"https://tja.lt/\">tja.lt</a>\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
 
 #~ msgid "Select your answer"
 #~ msgstr "Pasirinkite atsakymą"

@@ -3,6 +3,13 @@
 
 {% block content %}
   <h1>{% translate "Create a New Group" %} </h1>
+    <div><em>{% blocktranslate %}
+        A group is a set of people who take the test using the same group code, for example during a lesson,
+        training session, or within an organization. When at least 5 participants complete the test, the system
+        provides a summarized group result — the average score. This allows you to compare your individual
+        vulnerability score (visible only to you) with the group average.
+
+    {% endblocktranslate %}</em></div>
     <div>{% translate "Enter a group code. Group code may only consist of letters and numbers. Uppercase and lowercase letters count as the same." %}</div>
   <form method="post">
       {% csrf_token %}
