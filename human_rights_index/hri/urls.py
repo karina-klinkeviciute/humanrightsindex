@@ -1,7 +1,7 @@
 from django.urls import path
 
 from .views import EnterGroupCodeView, SurveyView, CompleteView, IndexView, WeightView, \
-    GroupCreateView, GroupSearchView, TextView
+    GroupCreateView, GroupSearchView, TextView, StartSurveyView
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
@@ -12,4 +12,5 @@ urlpatterns = [
     path('create-group/', GroupCreateView.as_view(), name='create_group'),
     path('search-group/', GroupSearchView.as_view(), name='search_group'),
     path('text/<str:slug>/', TextView.as_view(), name='text'),
+    path('start-survey/', StartSurveyView.as_view(), name='start_survey'),
 ]

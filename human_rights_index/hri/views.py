@@ -12,6 +12,24 @@ class IndexView(TemplateView):
     template_name = 'hri/index.html'
 
 
+from django.views import View
+from django.shortcuts import redirect, get_object_or_404
+from .models import Survey, Group  # adjust import paths as needed
+
+class StartSurveyView(View):
+    def get(self, request):
+        code = (request.GET.get('code') or '').strip().lower()
+
+        if code:
+            group = get_object_or_404(Group, code=code)
+            survey = Survey.objects.create(group=group)
+        else:
+            survey = Survey.objects.create()
+
+        # redirect to first question
+        return redirect('survey', survey_id=survey.id, question_number=1)
+
+
 class EnterGroupCodeView(FormView):
     """ View to handle the group code entry. """
     template_name = 'hri/enter_group_code.html'
